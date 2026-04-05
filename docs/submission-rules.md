@@ -16,8 +16,14 @@ Towers MUST be made in Roblox Studio using the official Welcome To Hell Kit.
 
 ### 2. Instance Limit
 
-Towers MUST not have more than 1250 instances per total floor count, excluding
-Folders.
+Each floor MUST NOT exceed 1500 instances across Mechanics, Obby, Frame, and
+Decorations.
+
+1.  This limit MUST be enforced by individual floors.
+2.  This limit MUST NOT be enforced with the tower as a whole.
+3.  Folders MUST NOT be counted to a floor's instance limit.
+4.  It is RECOMMENDED to organize floors using Folders across Mechanics, Obby,
+    Frame, and Decorations.
 
 ### 3. User Scripting
 
@@ -56,13 +62,13 @@ Floors are RECOMMENDED to be 100x100x100 cubes in size.
 
 1.  Floors MAY be moved or rotated into orientations that differ from the
     default frame.
-2.  Floors MAY be expanded by 100 studs from it's side across X and Z
-    axes. (300 studs maximum lengthwise both axes not including Y)
+2.  Floors MAY be expanded by up to 100 studs along the X and Z axes
+    (maximum 300 studs in length per axis)
 3.  Gameplay MAY be placed beyond a floor's boundaries without regard to
     dimensions.
 4.  Sections smaller or equal than 50 studs in any axes CANNOT be considered
     floors and MUST NOT be included in it's total floor count, ie. droppers,
-    small basements, et al.
+    small basements.
 
 ### 2. Floor Counts
 
@@ -98,18 +104,22 @@ chapter's lobby.
 
 ## Tower Place
 
+TBA
+
 ## Tower Submission
+
+TBA
 
 ### Naming
 
 Towers MUST follow the format `[Tower Type] of [...]`, where `[...]` can include
 up to 5 words.
 
-3.  Names MUST NOT conflict with the acronym of a tower already in Welcome To
+1.  Names MUST NOT conflict with the acronym of a tower already in Welcome To
     Hell
-4.  Names MUST NOT conflict with the following reserved tower acronyms:
+2.  Names MUST NOT conflict with the following reserved tower acronyms:
     1. ToWITOL
     2. CoTFT
     3. CoWTH
-1.  Names SHOULD represent the tower as a whole.
-2.  Names SHOULD NOT be based on an acronym
+3.  Names SHOULD represent the tower as a whole.
+4.  Names SHOULD NOT be based on an acronym
