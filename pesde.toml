@@ -1,0 +1,42 @@
+name = "team_fireworks/wth_kit"
+version = "0.1.0"
+description = "Everything you need to build towers for Welcome To Hell."
+authors = ["Team Fireworks"]
+repository = "https://github.com/team-fireworks/wth-kit"
+private = true
+
+[target]
+environment = "roblox"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.2.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.5.1", target = "lune" }
+
+[engines]
+pesde = "^0.7.0"
+lune = "^0.10.2"
+
+[dependencies]
+Fluid = { wally = "ffrostfall/fluid", version = "0.6.4" }
+gt = { name = "corecii/greentea", version = "^0.4.11" }
+Iris = { wally = "sirmallard/iris", version = "^2.5.0" }
+Option = { name = "lukadev_0/option", version = "^1.2.0" }
+Promise = { wally = "lukadev-0/typed-promise", version = "^4.0.2" }
+Result = { name = "lukadev_0/result", version = "^1.2.0" }
+Signal = { wally = "data-oriented-house/lemonsignal", version = "^1.10.0" }
+Charm = { wally = "littensy/charm", version = "^0.11.0-rc.3" }
+UILabs = { wally = "pepeeltoro41/ui-labs", version = "^2.4.2" }
+Quaternion = { wally = "sleitnick/quaternion", version = "^0.2.3" }
+
+[patches]
+"corecii/greentea" = { "0.4.11 roblox" = "patches/corecii+greentea-0.4.11+roblox.patch" }

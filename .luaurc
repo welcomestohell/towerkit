@@ -1,0 +1,15 @@
+{
+	"languageMode": "strict",
+	"lint": {
+		"*": true,
+		"LocalShadow": false
+	},
+	"aliases": {
+		"client": "src/client",
+		"server": "src/server",
+		"shared": "src/shared",
+		"ui": "src/ui",
+		"libs": "libs",
+		"pkgs": "roblox_packages"
+	}
+}
