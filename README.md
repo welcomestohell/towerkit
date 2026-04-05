@@ -8,7 +8,11 @@
         Everything you need to build towers for Welcome To Hell.
         <br/>
         <a href="https://youtu.be/l62-NJ2ZmAw?si=ezlXu1EStU90aOTz&t=22">
-            <b>Documentation →</b>
+            <b>Documentation</b>
+        </a>
+        ⋅
+        <a href="https://discord.gg/9Fuv68NcSt">
+            <b>Discord Server</b>
         </a>
     </p>
 </div>
