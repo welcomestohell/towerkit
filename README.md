@@ -35,22 +35,6 @@
 >
 > We hope you'll stick around!
 
-## Contributing
-
-Issue reports and suggestions are welcomed!
-
-For issue reports:
-
-Make sure you are using the latest kit version
-Give clear instructions on what the bug is, how to reproduce it, preferably including footage
-For kit suggestions:
-
-At the moment, we are not looking for suggestions regarding new client objects to add to the kit
-Please keep in mind that all additions and changes in the kit must be fully backwards compatible with previous versions of the kit due to possible breaking changes to towers using older kit versions.
-For documentation changes:
-
-Make a pull request that includes your changes, along with an explanation of what c
-
 ## License
 
 Copyright (c) 2024-2026 Team Fireworks Games
@@ -67,8 +51,6 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-### Additional Terms
 
 The license in this repository only covers the code and algorithims in this
 repository. Non-code assets including but not limited to assets, trademarks,
