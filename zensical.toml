@@ -1,0 +1,101 @@
+
+[project]
+site_name = "Welcome To Hell Kit"
+site_description = "Everything you need to build towers for Welcome To Hell."
+site_author = "Team Fireworks Games"
+repo_name = "team-fireworks/wth-kit"
+repo_url = "https://github.com/team-fireworks/wth-kit"
+copyright = """
+Copyright &copy; 2024-2026 Team Fireworks Games
+"""
+
+nav = [
+    { "Home" = "index.md" },
+    { "Guides" = [
+        "guides/introduction.md",
+        { "Policies" = [
+            "guides/policies/submission-guidelines.md",
+        ] },
+    ] },
+    { "Reference" = [
+        { "Mechanics" = [
+        ] },
+        { "API" = [
+        ] },
+    ] },
+
+]
+
+#extra_css = ["stylesheets/extra.css"]
+
+#extra_javascript = ["javascripts/extra.js"]
+
+[project.theme]
+#custom_dir = "overrides"
+favicon = "assets/branding/logos/fit.png"
+language = "en"
+
+features = [
+    "announce.dismiss",
+    "content.action.edit",
+    "content.action.view",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    # "header.autohide",
+    # "navigation.expand",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+    "navigation.path",
+    #"navigation.prune",
+    "navigation.sections",
+    "navigation.tabs",
+    # "navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    "toc.follow",
+    "toc.integrate",
+]
+
+logo = "assets/branding/logo/fit.png"
+
+[project.theme.font]
+text = "Titillium Web"
+code = "Inconsolata"
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/team-fireworks/wth-kit"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/discord"
+link = "https://discord.com/invite/9Fuv68NcSt"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/@wthrblx"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/instagram"
+link = "https://instagram.com/wthrblx"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/bluesky"
+link = "https://bsky.app/profile/wthrblx.bsky.social"

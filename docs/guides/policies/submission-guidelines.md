@@ -1,4 +1,4 @@
-# Submission Rules
+# Submission Guidelines
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be
@@ -99,6 +99,13 @@ chapter's lobby.
 2.  Gameplay does not need to be contained in a frame.
 3.  Exactly ONE continous portion of a frame, at least 50 studs in width and
     depth MUST be touching the ground.
+
+    ??? success "Valid examples"
+
+        ![](/assets/media/frame-1.png)
+        ![](/assets/media/frame-2.png)
+
+
 4.  Presented frames are RECOMMENDED to feel like a tower with vertically
     stacked floors.
 

@@ -1,6 +1,6 @@
 <div align="center">
     <h1>
-        <img src="./assets/branding/logo/fit.png" alt="Welcome To Hell Logo" width="250px" />
+        <img src="./docs/assets/branding/logo/fit.png" alt="Welcome To Hell Logo" width="250px" />
         <br/>
         Welcome To Hell Kit 
     </h1>
