@@ -1,7 +1,7 @@
 --!nocheck
 --!nolint
 --#selene: allow(unused_variable, shadowing)
---- repr - Version 1.2
+-- repr - Version 1.2
 -- Ozzypig - ozzypig.com - http://twitter.com/Ozzypig
 -- Check out this thread for more info:
 -- https://devforum.roblox.com/t/repr-function-for-printing-tables/276575

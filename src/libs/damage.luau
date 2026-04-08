@@ -32,7 +32,7 @@ function damage.damagePlayer(player: Player, damage: number): boolean
 	if RunService:IsServer() then
 		humanoid:TakeDamage(damage)
 	elseif RunService:IsClient() then
-		local net = require("@kit/client/generated/net")
+		local net = require("@core/client/generated/net")
 
 		net.damage.fire(damage)
 	end

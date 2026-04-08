@@ -3,10 +3,10 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Level = require("@libs/Level")
 local Life = require("@libs/memory/Life")
 local Log = require("@libs/Log")
-local audios = require("@kit/shared/generated/audios")
+local audios = require("@core/shared/generated/audios")
 local character = require("@libs/character")
-local net = require("@kit/client/generated/net")
-local prvd = require("@kit/shared/prvdmwrong/prvdmwrong")
+local net = require("@core/client/generated/net")
+local prvd = require("@core/shared/prvdmwrong/prvdmwrong")
 local sounds = require("@libs/sounds")
 
 local KitClientProvider = {}

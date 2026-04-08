@@ -6,7 +6,7 @@ local activation = require("./activation")
 local character = require("./character")
 local functions = require("./functions")
 local properties = require("./properties")
-local roblox = require("@kit/shared/generated/types/roblox")
+local roblox = require("@core/shared/generated/types/roblox")
 local tables = require("@libs/collections/tables")
 local tweens = require("@libs/tweens")
 
@@ -23,6 +23,7 @@ export type Evaluation<Returns = unknown> = { evaluator: Evaluator<Returns> }
 export type Transformation = StaticValue | Evaluation
 
 -- molly im really sorry for this shit ass code im better than this
+-- update april 8th i got friendzoned </3
 local function createHierachyMethod(method)
 	-- 𒅒𒈔𒅒𒇫𒄆̼͙̈́͆̈́ͯ̒̆̀̓ͧ͠𒀱҈  ҉ ҈  ҉ ҈  ҉FUCK THIS SHIT
 	return function<I>(self: Transformer<I>, ...): Transformer<Instance>
@@ -57,6 +58,12 @@ local function createHierachyMethod(method)
 	end
 end
 
+--[=[
+	@class Transformer
+	@tag Library
+
+	TBA
+]=]
 local Transformer = {}
 Transformer.__index = Transformer
 
@@ -113,7 +120,7 @@ function Transformer.clone<I>(self: Transformer<I>): Transformer<I>
 end
 
 --[=[
-    Constructs a transformer that affects itself.
+	Constructs a transformer that affects itself.
 ]=]
 function Transformer.fromSelf(): Transformer<Instance>
 	return Transformer.new(function(context: EvaluationContext)
@@ -122,7 +129,7 @@ function Transformer.fromSelf(): Transformer<Instance>
 end
 
 --[=[
-    Constructs a transformer that affects the specified instance.
+	Constructs a transformer that affects the specified instance.
 ]=]
 function Transformer.fromInstance(instance: Instance): Transformer<Instance>
 	return Transformer.new(function(context: EvaluationContext)
@@ -131,7 +138,7 @@ function Transformer.fromInstance(instance: Instance): Transformer<Instance>
 end
 
 --[=[
-    Constructs a transformer that affects the topmost instance of the current
+	Constructs a transformer that affects the topmost instance of the current
 	level.
 ]=]
 function Transformer.fromLevel(): Transformer<Instance>
@@ -141,8 +148,8 @@ function Transformer.fromLevel(): Transformer<Instance>
 end
 
 --[=[
-    Constructs a transformer that affects a `Target` ObjectValue under the
-    transformer.
+	Constructs a transformer that affects a `Target` ObjectValue under the
+	transformer.
 ]=]
 function Transformer.fromTargetValue(tag: string)
 	return Transformer.new(function(context: EvaluationContext)
@@ -154,8 +161,8 @@ function Transformer.fromTargetValue(tag: string)
 end
 
 --[=[
-    Constructs a transformer that affects applicable touched parts when
-    activated.
+	Constructs a transformer that affects applicable touched parts when
+	activated.
 ]=]
 function Transformer.fromTouchActivator(): Transformer<BasePart>
 	return Transformer.new(function(context: EvaluationContext)
@@ -165,8 +172,8 @@ function Transformer.fromTouchActivator(): Transformer<BasePart>
 end
 
 --[=[
-    Constructs a transformer that affects all instances with the given tag
-    under the level.
+	Constructs a transformer that affects all instances with the given tag
+	under the level.
 ]=]
 function Transformer.fromTagged(tag: string): Transformer<Instance>
 	return Transformer.new(function(context: EvaluationContext)
@@ -183,7 +190,7 @@ function Transformer.fromTagged(tag: string): Transformer<Instance>
 end
 
 --[=[
-    Constructs a transformer that affects all specified limbs of the
+	Constructs a transformer that affects all specified limbs of the
 	player's character.
 ]=]
 function Transformer.fromCharacterLimbs(limb: Enum.Limb, ...: Enum.Limb): Transformer<BasePart>

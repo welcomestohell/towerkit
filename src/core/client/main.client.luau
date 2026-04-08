@@ -1,6 +1,6 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local framework = require("@kit/shared/framework")
+local framework = require("@core/shared/framework")
 
 framework.useModulesFromPath(ReplicatedStorage, "Internal", "Client", "providers")
 framework.useModulesFromPath(ReplicatedStorage, "Internal", "Shared", "providers")

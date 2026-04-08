@@ -8,6 +8,7 @@ local Result = require("@libs/Result")
 local gt = require("@libs/gt")
 
 --[=[
+	@within N/A
 	@function mechanize
 	@tag Library
 	@since 0.1.0

@@ -1,7 +1,7 @@
 local CollectionService = game:GetService("CollectionService")
 local RunService = game:GetService("RunService")
 
-local prvd = require("@kit/shared/prvdmwrong/prvdmwrong")
+local prvd = require("@core/shared/prvdmwrong/prvdmwrong")
 
 local StudioTagProvider = {}
 export type StudioTagProvider = typeof(StudioTagProvider)

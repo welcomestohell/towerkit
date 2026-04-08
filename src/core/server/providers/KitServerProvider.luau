@@ -7,9 +7,9 @@ local Workspace = game:GetService("Workspace")
 
 local Level = require("@libs/Level")
 local Log = require("@libs/Log")
-local PlayerInstanceLoader = require("@kit/server/PlayerInstanceLoader")
-local net = require("@kit/server/generated/net")
-local prvd = require("@kit/shared/prvdmwrong/prvdmwrong")
+local PlayerInstanceLoader = require("@core/server/PlayerInstanceLoader")
+local net = require("@core/server/generated/net")
+local prvd = require("@core/shared/prvdmwrong/prvdmwrong")
 
 local TOWER_FALLBACK_TAG = "Welcome To Hell Kit Tower"
 

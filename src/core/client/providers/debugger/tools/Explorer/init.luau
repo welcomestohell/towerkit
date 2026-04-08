@@ -48,7 +48,7 @@ type ReflectedProperty = {
 	},
 }
 
-local DebuggerStore = require("@kit/client/providers/debugger/DebuggerStore")
+local DebuggerStore = require("@core/client/providers/debugger/DebuggerStore")
 local Iris = require("@libs/Iris")
 local Life = require("@libs/memory/Life")
 local icons = require("@self/icons")

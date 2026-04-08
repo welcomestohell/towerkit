@@ -1,6 +1,6 @@
 local Log = require("@libs/Log")
-local input = require("@kit/shared/combat/input")
-local prvd = require("@kit/shared/prvdmwrong/prvdmwrong")
+local input = require("@core/shared/combat/input")
+local prvd = require("@core/shared/prvdmwrong/prvdmwrong")
 
 local WeaponsProvider = {}
 

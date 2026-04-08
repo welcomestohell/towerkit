@@ -4,7 +4,7 @@ local SoundService = game:GetService("SoundService")
 
 local Attribute = require("./Attribute")
 local Mechanic = require("./Mechanic")
-local audios = require("@kit/shared/generated/audios")
+local audios = require("@core/shared/generated/audios")
 local gt = require("./gt")
 
 export type SoundConfiguration = {
@@ -137,7 +137,7 @@ local function preloadAssets()
 	end
 end
 
-return table.freeze {
+return table.freeze({
 	sfx = table.freeze(table.clone(audios.sfx)),
 	assetPaths = assetPaths,
 	useAssets = useAssets :: <T>(assets: T) -> (),
@@ -148,4 +148,4 @@ return table.freeze {
 	playInstance = playInstance,
 	playMechanic = playMechanic,
 	preloadAssets = preloadAssets,
-}
+})

@@ -22,7 +22,7 @@
 		"prefix": "prvd",
 		"description": "Prvd 'M Wrong Provider",
 		"body": [
-			"local prvd = require(\"@kit/shared/prvdmwrong/prvdmwrong\")",
+			"local prvd = require(\"@core/shared/prvdmwrong/prvdmwrong\")",
 			"",
 			"local ${0:$TM_FILENAME_BASE} = {}",
 			"export type ${0:$TM_FILENAME_BASE} = typeof(${0:$TM_FILENAME_BASE})",

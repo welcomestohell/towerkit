@@ -1,4 +1,4 @@
-local prvd = require("@kit/shared/prvdmwrong/prvdmwrong")
+local prvd = require("@core/shared/prvdmwrong/prvdmwrong")
 
 local TemplateProvider = {}
 export type TemplateProvider = typeof(TemplateProvider)

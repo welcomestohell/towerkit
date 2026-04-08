@@ -1,7 +1,7 @@
 local Debugger = require("./Debugger")
 local Iris = require("@libs/Iris")
 local Life = require("@libs/memory/Life")
-local prvd = require("@kit/shared/prvdmwrong/prvdmwrong")
+local prvd = require("@core/shared/prvdmwrong/prvdmwrong")
 
 local DebuggerProvider = {}
 export type DebugProvider = typeof(DebuggerProvider)

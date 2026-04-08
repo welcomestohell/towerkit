@@ -127,6 +127,7 @@ function ScriptCollector.collectInstance(self: ScriptCollector, instance: Instan
 end
 
 --[=[
+    @function collectInstanceAsync
     @within ScriptCollector
     @since 0.1.0
 

@@ -1,6 +1,6 @@
-local prvd = require("@kit/shared/prvdmwrong/prvdmwrong")
+local prvd = require("@core/shared/prvdmwrong/prvdmwrong")
 
-local root = prvd.root():useProvider(require("@kit/shared/prvdmwrong/rbx-lifecycles") :: any)
+local root = prvd.root():useProvider(require("@core/shared/prvdmwrong/rbx-lifecycles") :: any)
 
 local function useModulesFromPath(parentRoot: Instance, ...: string)
 	for index = 1, select("#", ...) do
@@ -9,7 +9,7 @@ local function useModulesFromPath(parentRoot: Instance, ...: string)
 	root:useModules(parentRoot:GetDescendants())
 end
 
-return table.freeze {
+return table.freeze({
 	root = root,
 	useModulesFromPath = useModulesFromPath,
-}
+})

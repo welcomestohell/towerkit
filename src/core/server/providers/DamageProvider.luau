@@ -1,5 +1,5 @@
-local net = require("@kit/server/generated/net")
-local prvd = require("@kit/shared/prvdmwrong/prvdmwrong")
+local net = require("@core/server/generated/net")
+local prvd = require("@core/shared/prvdmwrong/prvdmwrong")
 
 local damage = require("@libs/damage")
 

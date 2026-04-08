@@ -1,4 +1,4 @@
-local roblox = require("@kit/shared/generated/types/roblox")
+local roblox = require("@core/shared/generated/types/roblox")
 local types = require("./types")
 
 local function createChildOfClass<ClassName>(
