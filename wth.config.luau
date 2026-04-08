@@ -1,11 +1,10 @@
-local time = require("@std/time")
-
 return {
-	game = {
+	mirror = {
 		remote = "https://github.com/team-fireworks/wth.git",
+		branch = "main",
+
 		directory = "game",
-		fetchFrequency = time.duration.days(1),
-		syncItems = {
+		targets = {
 			"src/core",
 			"src/libs",
 			"pesde.toml",

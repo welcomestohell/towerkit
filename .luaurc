@@ -7,7 +7,9 @@
         "kit": "src/kit",
         "lute": "~/.lute/typedefs/0.1.0/lute",
         "lint": "~/.lute/typedefs/0.1.0/lint",
-        "std": "~/.lute/typedefs/0.1.0/std"
+        "std": "~/.lute/typedefs/0.1.0/std",
+        "batteries": ".lute/batteries",
+        "scripts": ".lute"
     },
     "lint": {
         "LocalShadow": false,
