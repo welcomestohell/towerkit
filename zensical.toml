@@ -20,9 +20,16 @@ nav = [
         ] },
     ] },
     { "Reference" = [
-        { "Mechanics" = [
-        ] },
-        { "API" = [
+        "reference/index.md",
+        { "Libraries" = [
+            # refgen: libraries start
+{ "Level" = ["reference/libraries/level/index.md"] },
+{ "Life" = ["reference/libraries/life/index.md"] },
+{ "Mechanic" = ["reference/libraries/mechanic/index.md"] },
+{ "ScriptCollector" = ["reference/libraries/scriptcollector/index.md"] },
+{ "Transformer" = ["reference/libraries/transformer/index.md"] },
+{ "std" = ["reference/libraries/std/index.md"] }
+# refgen: libraries end
         ] },
     ] },
     { "Policies" = [

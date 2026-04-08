@@ -15,6 +15,9 @@ site
 src/*/generated/**/*.luau
 !src/shared/generated/types/roblox.luau
 
+# lute typedefs
+.lute/typedefs
+
 # python
 .venv
 .cache

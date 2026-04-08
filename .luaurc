@@ -7,9 +7,9 @@
         "libs": "src/libs",
         "kit": "src/kit",
         // lute
-        "lute": "~/.lute/typedefs/0.1.0/lute",
-        "lint": "~/.lute/typedefs/0.1.0/lint",
-        "std": "~/.lute/typedefs/0.1.0/std",
+        "lute": ".lute/typedefs/lute",
+        "lint": ".lute/typedefs/lint",
+        "std": ".lute/typedefs/std",
         "batteries": ".lute/batteries",
         "scripts": ".lute",
         "config": ".config"
