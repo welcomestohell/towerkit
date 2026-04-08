@@ -58,6 +58,7 @@ if subcommand == "help" then
 	print()
 	print("Commands:")
 	print("  sync (default)        Fetch and mirror code")
+	print("  commit                Fetch and mirror code, then pushes a git commit")
 	print("  fetch                 Fetch mirror from current revision")
 	print("  apply                 Mirrors code onto targets")
 	print("  help                  Prints this message")
@@ -66,6 +67,12 @@ if subcommand == "help" then
 elseif subcommand == "sync" then
 	pull()
 	applyTargets()
+elseif subcommand == "commit" then
+	pull()
+	applyTargets()
+	exec("git", "add", ".")
+	exec("git", "commit", "-m", '"chore: mirror codebase"')
+	exec("git", "push", "origin", "main")
 elseif subcommand == "pull" then
 	process.exit(pull().exitcode)
 elseif subcommand == "apply" then
