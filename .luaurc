@@ -15,7 +15,7 @@
         "config": ".config"
     },
     "lint": {
-        "LocalShadow": false,
-        "*": true
+        "*": true,
+        "LocalShadow": false
     }
 }
