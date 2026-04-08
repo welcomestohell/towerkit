@@ -1,11 +1,17 @@
-<!-- This file was automatically @generated and should not be modified manually. -->
+<!--
+    This file was automatically @generated using Welcome To Hell's `refgen`. 
+    As changes may be overriden, this file should not be manually modified.
+-->
 
 # Transformer
 
-!!! tip "Transformer can be imported from ReplicatedStorage.Libs!"
-
-    ```luau
-    local Transformer = require("@game/ReplicatedStorage/Libs/Transformer")
-    ```
+```luau
+local Transformer = require("@game/ReplicatedStorage/Libs/Transformer")
+```
 
 TBA
+
+## API
+
+{api}
+

@@ -23,13 +23,27 @@ nav = [
         "reference/index.md",
         { "Libraries" = [
             # refgen: libraries start
-{ "Level" = ["reference/libraries/level/index.md"] },
-{ "Life" = ["reference/libraries/life/index.md"] },
-{ "Mechanic" = ["reference/libraries/mechanic/index.md"] },
-{ "ScriptCollector" = ["reference/libraries/scriptcollector/index.md"] },
-{ "Transformer" = ["reference/libraries/transformer/index.md"] },
-{ "std" = ["reference/libraries/std/index.md"] }
-# refgen: libraries end
+            [
+                { "Level" = [
+                    "docs/reference/libraries/level/index.md",
+                ] },
+                { "Life" = [
+                    "docs/reference/libraries/life/index.md",
+                ] },
+                { "Mechanic" = [
+                    "docs/reference/libraries/mechanic/index.md",
+                ] },
+                { "ScriptCollector" = [
+                    "docs/reference/libraries/scriptcollector/index.md",
+                ] },
+                { "Transformer" = [
+                    "docs/reference/libraries/transformer/index.md",
+                ] },
+                { "std" = [
+                    "docs/reference/libraries/std/index.md",
+                ] },
+            ],
+            # refgen: libraries end
         ] },
     ] },
     { "Policies" = [

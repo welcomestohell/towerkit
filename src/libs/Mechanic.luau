@@ -25,7 +25,7 @@ export type MechanicImplementationMetadata = {
 }
 
 --[=[
-	@class Mechanic<Self>
+	@class Mechanic<Self> 
 	@tag Interface
 
 	An instance loaded in a `Level` with user-implemented behavior as defined by a

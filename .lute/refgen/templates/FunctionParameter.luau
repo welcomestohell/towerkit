@@ -1,0 +1,5 @@
+return [[### {name} `: {signature}`
+
+{description}
+
+]]
