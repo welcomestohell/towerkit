@@ -6,15 +6,11 @@ return [[<!--
 # {name}
 
 ```luau
-{name} = {
-{apiSignature}
-}
+{name} = {apiSignature}
 ```
 
 {description}
 
-## API
-
-{api}
+{sectionMethods}
 
 ]]

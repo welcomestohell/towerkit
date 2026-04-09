@@ -1,6 +1,7 @@
 return {
 	ApiItem = require("@self/ApiItem"),
 	ApiList = require("@self/ApiLIst"),
+	ApiSignatureField = require("@self/ApiSignatureField"),
 	Class = require("@self/Class"),
 	Function = require("@self/Function"),
 	FunctionParameter = require("@self/FunctionParameter"),

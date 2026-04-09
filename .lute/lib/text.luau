@@ -12,8 +12,13 @@ local function quote(str: string)
 	return string.format("%q", str)
 end
 
+local function replaceBraced(content: string, replacements: any)
+	return (string.gsub(content, "{([^{}]-)}", replacements))
+end
+
 return table.freeze({
 	heading = heading,
-	replaceSectionedBlock = replaceSectionedBlock,
 	quote = quote,
+	replaceSectionedBlock = replaceSectionedBlock,
+	replaceBraced = replaceBraced,
 })

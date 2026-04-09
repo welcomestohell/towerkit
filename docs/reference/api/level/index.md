@@ -6,9 +6,7 @@
 # Level
 
 ```luau
-Level = {
-   -- No APIs implemented.
-}
+Level = {}
 ```
 
 Orchestrator of scripts and mechanics in levels.
@@ -20,7 +18,5 @@ Chapters in Welcome To Hell's Campaign.
 This class should not be constructed by tower scripts. Many Mechanic
 methods provide a handle to a tower's Level as the last argument.
 
-## API
 
-{api}
 

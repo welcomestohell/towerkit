@@ -1,19 +1,10 @@
-return [[{header}
-
-# <span class="wth-ref-header-function">function</span> {name}
+return [[
+### {name}
 
 ```luau
-{signature}
+{definition}
 ```
 
-{desc}
-
-## Parameters
-
-{parameters}
-
-## Returns
-
-{returns}
+{description}
 
 ]]

@@ -2,6 +2,7 @@ local docs = require("@config/docs")
 local project = require("@config/project")
 local tables = require("@libs/collections/tables")
 local text = require("@scripts/lib/text")
+local templates = require("./templates")
 local reconstructRequirePath = require("./reconstructRequirePath")
 local sourcemap = require("./sourcemap")
 local path = require("@std/path")
@@ -26,6 +27,7 @@ export type Class = Base & {
 	directory: path.path,
 	methods: { Method },
 	apiSignature: string,
+	sectionMethods: string,
 }
 
 export type Method = Base & {
@@ -33,6 +35,7 @@ export type Method = Base & {
 	parameters: { moonwave.FunctionParameter },
 	returns: { moonwave.LuaType },
 	signature: string,
+	definition: string,
 }
 
 export type Model = {
@@ -89,6 +92,7 @@ local function modelMethod(model: Model, class: Class, method: moonwave.Function
 	local returnSignature = string.format(returnBraces :: any, table.concat(returnTypes, ", "))
 
 	base.signature = `({table.concat(parameterSignature, ", ")}) -> {returnSignature}`
+	base.definition = `function {class.name}({table.concat(parameterSignature, ", ")}): {returnSignature}`
 
 	return base
 end
@@ -99,20 +103,23 @@ local function modelClass(model: Model, class: moonwave.Class): Class
 	base.directory = path.join(filepaths.api, base.slug)
 
 	local apiSignature = {}
+	local methods = {}
 
 	base.methods = tables.create(#class.functions)
 	for index, method in class.functions do
 		local methodModel = modelMethod(model, base, method)
 		base.methods[index] = methodModel
-		table.insert(apiSignature, `   {methodModel.name}: {methodModel.signature},`)
+		table.insert(apiSignature, text.replaceBraced(templates.ApiSignatureField, methodModel))
+		methods[index] = text.replaceBraced(templates.Function, methodModel)
 	end
 
-	base.apiSignature = if #apiSignature > 1 then table.concat(apiSignature, "\n") else "   -- No APIs implemented."
+	base.apiSignature = if #apiSignature > 1 then `\{\n{table.concat(apiSignature, "\n")}\n\}` else "{}"
+	base.sectionMethods = if #methods > 0 then `## Methods\n{table.concat(methods, "\n")}` else ""
 
 	return base
 end
 
-local function moonwaveModel(classes: { moonwave.Class })
+local function modelMoonwave(classes: { moonwave.Class })
 	local model: Model = {
 		classes = {},
 		sourcemapPaths = sourcemap.process(),
@@ -134,4 +141,4 @@ local function moonwaveModel(classes: { moonwave.Class })
 	return model
 end
 
-return moonwaveModel
+return modelMoonwave

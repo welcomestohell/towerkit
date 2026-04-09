@@ -3,7 +3,7 @@ local project = require("@config/project")
 local clearDirectory = require("@scripts/lib/clearDirectory")
 local text = require("@scripts/lib/text")
 local filepaths = require("@self/filepaths")
-local moonwaveModel = require("@self/moonwaveModel")
+local modelMoonwave = require("@self/modelMoonwave")
 local process = require("@std/process")
 local json = require("@std/json")
 local moonwave = require("@self/moonwave")
@@ -17,7 +17,7 @@ local raw = process.run({
 	project.source,
 }).stdout
 
-local model = moonwaveModel(json.deserialize(raw) :: moonwave.Extracted)
+local model = modelMoonwave(json.deserialize(raw) :: moonwave.Extracted)
 
 clearDirectory(filepaths.api)
 
@@ -31,7 +31,7 @@ local function linkNames(content: string, hyperlinks: { [string]: string })
 end
 
 for _, class in model.classes do
-	local contents = string.gsub(templates.Class, "{([^{}]-)}", class :: { [string]: string })
+	local contents = text.replaceBraced(templates.Class, class)
 
 	local nameToHyperlinks = table.clone(model.nameToHyperlinks)
 	nameToHyperlinks[class.name] = nil
