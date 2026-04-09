@@ -87,18 +87,20 @@ The total floor count must fall within the allowed range for each tower type.
 1.  Towers MUST be exactly 10 floors.
 2.  Citadels MUST be between 15 to 30 floors.
 
-### 3. Gauntlet Floor
+### 3. Gauntlet Floors
 
-All towers must include a separate Gauntlet floor which is used for its
+All towers MUST include TWO connected Gauntlet floors which is used for its
 chapter’s Gauntlet.
 
-1.  This floor MUST be precisely 100 studs tall.
-2.  This floor MUST comply with Section 1 (Floor Definition).
-3.  This floor MUST have a clear start point and ending point which is contained
-    inside the frame.
-4.  This floor MUST NOT have a ceiling or a roof.
-5.  This floor MUST NOT be connected with the main tower.
-6.  This floor MUST NOT be included with the total floor count.
+1.  These floors MUST be precisely 100 studs tall each.
+2.  These floors MUST comply with Section 1 (Floor Definition).
+3.  These floors MUST be physically connected.
+4.  These floors MUST have a clear start point and ending point which is
+    contained inside it's frame.
+5.  These floors MUST have vertical ascending progression
+6.  These floors MUST have a ceiling or a roof.
+7.  These floors MUST be connected with the main tower.
+8.  These floors MUST be included with the total floor count.
 
 ### 4. Presentation
 
