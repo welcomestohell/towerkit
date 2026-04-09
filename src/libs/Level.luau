@@ -26,8 +26,8 @@ local log = Log.new("Level")
 	some starting positions. Alongside towers, Levels are also used to represent
 	Chapters in Welcome To Hell's Campaign.
 
-	This class should not be constructed by tower scripts. Many `Mechanic`
-	methods provide a handle to a tower's `Level` as the last argument.
+	This class should not be constructed by tower scripts. Many Mechanic
+	methods provide a handle to a tower's Level as the last argument.
 ]=]
 local Level = {}
 Level.__index = Level

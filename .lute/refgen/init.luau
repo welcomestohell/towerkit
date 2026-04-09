@@ -37,7 +37,7 @@ for _, library in model.libraries do
 	fs.createdirectory(library.outputDirectory, { makeparents = true })
 	fs.writestringtofile(index, libraryContents)
 
-	table.insert(libraryNav, { [library.name] = { path.format(index) } })
+	table.insert(libraryNav, { [library.name] = { path.format(path.join(library.outputUrl, "index.md")) } })
 end
 
 local zensical = fs.readfiletostring(docs.zensical)
@@ -45,7 +45,9 @@ zensical = text.replaceSectionedBlock(
 	zensical,
 	-- json is close enough lmao
 	-- + toml breaks anyway
-	json.serialize(libraryNav :: any):gsub(":", "="),
+	'{ "Libraries" = '
+		.. json.serialize(libraryNav :: any):gsub(":", "=")
+		.. " }",
 	"# refgen: libraries start",
 	"# refgen: libraries end"
 )
