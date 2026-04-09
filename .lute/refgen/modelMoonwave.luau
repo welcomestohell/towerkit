@@ -92,7 +92,7 @@ local function modelMethod(model: Model, class: Class, method: moonwave.Function
 	local returnSignature = string.format(returnBraces :: any, table.concat(returnTypes, ", "))
 
 	base.signature = `({table.concat(parameterSignature, ", ")}) -> {returnSignature}`
-	base.definition = `function {class.name}({table.concat(parameterSignature, ", ")}): {returnSignature}`
+	base.definition = `function {base.name}({table.concat(parameterSignature, ", ")}): {returnSignature}`
 
 	return base
 end

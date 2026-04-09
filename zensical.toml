@@ -5,6 +5,7 @@ site_description = "Everything you need to build towers for Welcome To Hell."
 site_author = "Team Fireworks Games"
 repo_name = "team-fireworks/wth-kit"
 repo_url = "https://github.com/team-fireworks/wth-kit"
+repo_icon = "fontawesome/brands/github"
 copyright = """
 Copyright &copy; 2024-2026 Team Fireworks Games
 """
@@ -41,7 +42,7 @@ nav = [
 
 [project.theme]
 #custom_dir = "overrides"
-favicon = "assets/branding/logo/square.png"
+favicon = "assets/favicon.svg"
 language = "en"
 
 features = [
@@ -73,7 +74,7 @@ features = [
     # "toc.integrate",
 ]
 
-logo = "assets/branding/logo/fit.png"
+logo = "assets/logo.svg"
 
 [project.theme.font]
 text = "Titillium Web"
