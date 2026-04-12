@@ -5,7 +5,7 @@ local process = require("@lute/process")
 
 process.run({ "rojo", "sourcemap", "--output=sourcemap.json", project.rojoProjects.sourcemap }, { stdio = "inherit" })
 
-process.run({ "pesde", "install" })
+process.run({ "pesde", "install" }, { stdio = "inherit" })
 
 fs.writestringtofile(
 	"roblox.d.luau",
@@ -18,7 +18,15 @@ local analyze = process.run({
 	"--sourcemap=sourcemap.json",
 	"--ignore=**/generated/**",
 	"--ignore=**/.pesde/**",
-	-- FIXME: Not sure why luau-lsp reports errors at this specific path
+	"--ignore=**/roblox_packages/**",
+	"--ignore=**/roblox_server_packages/**",
+	"--ignore=**/luau_packages/**",
+	"--ignore=**/lune_packages/**",
+	-- FIXME: ??? i guess bro
+	"--ignore=..",
+	"--ignore=../..",
+	"--ignore=../../..",
+	"--ignore=../../../..",
 	"--ignore=../../../../..",
 	"--ignore=../../../../../..",
 	"--base-luaurc=.luaurc",
