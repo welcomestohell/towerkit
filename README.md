@@ -1,45 +1,15 @@
 <div align="center">
     <h1>
-        <img src="./docs/assets/branding/logo/fit.png" alt="Welcome To Hell Logo" width="250px" />
+        <img src="./docs/assets/branding/logo/fit.png" alt="Welcome To Hell Logo" width="380px" />
         <br/>
         Welcome To Hell Kit 
     </h1>
     <p>
         Everything you need to build towers for Welcome To Hell.
         <br/>
-        <a href="https://youtu.be/l62-NJ2ZmAw?si=ezlXu1EStU90aOTz&t=22">
-            <b>Documentation</b>
-        </a>
-        ⋅
-        <a href="https://discord.gg/9Fuv68NcSt">
-            <b>Discord Server</b>
-        </a>
+        <a href="https://kit.welcomestohell.com/">kit.welcomestohell.com</a>
     </p>
 </div>
-
-> [!WARNING]
-> 
-> ## WELCOME TO HELL IS UNRELEASED AND UNFINISHED.
->
-> Welcome To Hell is under active development. Unless you're really, really,
-> **really, REALLY, REALLY** willing and able to withstand large, sweeping
-> changes, do not build towers for Welcome To Hell yet. Yes, that was
-> five-reallys important.
-> 
-> You will encounter:
-> 
-> * missing or incomplete features
-> * changes in how things work between versions
-> * updates that completely remove existing features
-> * evolving recommendations on conventions and project structure
->
-> This is not a bad thing! It means we can quickly abandon counterproductive
-> ideas and features, and build a solid foundation for the future.
->
-> Don't be discouraged though, feel free to follow along with our development
-> and try using the kit in your own time.
->
-> We hope you'll stick around!
 
 ## License
 

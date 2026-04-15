@@ -40,6 +40,7 @@ Quaternion = { wally = "sleitnick/quaternion", version = "^0.2.3" }
 Sift = { wally = "csqrl/sift", version = "^0.0.11" }
 Lyra = { wally = "paradoxum-games/lyra", version = "^0.6.0" }
 CharmSync = { wally = "littensy/charm-sync", version = "^0.4.0-rc.7" }
+typeforge = { wally = "cameronpcampbell/typeforge", version = "^3.0.4" }
 
 [patches]
 "corecii/greentea" = { "0.4.11 roblox" = "patches/corecii+greentea-0.4.11+roblox.patch" }
