@@ -1,9 +1,10 @@
-# pesde
+# packages
 .pesde
 roblox_packages
 roblox_server_packages
 luau_packages
 lune_packages
+node_modules
 
 # lock files
 *.lock
@@ -29,3 +30,5 @@ Thumbs.db
 
 # mirror codebase
 mirror
+
+# docs
