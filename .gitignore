@@ -15,6 +15,7 @@ sourcemap.json
 site
 src/*/generated/**/*.luau
 !src/shared/generated/types/roblox.luau
+.vitepress/cache
 
 # typedefs
 .lute/typedefs
@@ -30,5 +31,3 @@ Thumbs.db
 
 # mirror codebase
 mirror
-
-# docs
