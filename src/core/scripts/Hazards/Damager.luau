@@ -12,7 +12,7 @@ local damage = require("@libs/damage")
 local Damager = std.Mechanic({})
 export type DamagerMechanic = std.Mechanic<typeof(Damager)>
 
-Damager.instanceTag = "Damager"
+Damager.basename = "Damager"
 Damager.instanceType = std.isA.Instance()
 Damager.debuggerEmoji = "☠️"
 

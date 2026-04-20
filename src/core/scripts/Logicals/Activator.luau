@@ -11,7 +11,7 @@ local std = require("@libs/std")
 ]=]
 local Activator = std.Mechanic({})
 export type ActivatorMechanic = std.Mechanic<typeof(Activator)>
-Activator.instanceTag = "Activator"
+Activator.basename = "Activator"
 Activator.instanceType = std.gt.instanceTree({
 	Target = std.gt.optional(std.isA.ObjectValue()),
 })

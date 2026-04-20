@@ -2,7 +2,7 @@ local std = require("@libs/std")
 
 local ConsistentParticleEmitter = std.Mechanic({})
 export type ConsistentParticleEmitterMechanic = std.Mechanic<typeof(ConsistentParticleEmitter)>
-ConsistentParticleEmitter.instanceTag = "ConsistentParticleEmitter"
+ConsistentParticleEmitter.basename = "ConsistentParticleEmitter"
 ConsistentParticleEmitter.instanceType = std.isA.ParticleEmitter()
 ConsistentParticleEmitter.debuggerEmoji = "✨"
 

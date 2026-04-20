@@ -6,7 +6,7 @@ local tweens = require("@libs/tweens")
 
 local Camera = std.Mechanic({})
 export type CameraMechanic = std.Mechanic<typeof(Camera)>
-Camera.instanceTag = "Camera"
+Camera.basename = "Camera"
 Camera.instanceType = std.gt.union2(std.isA.BasePart(), std.isA.Camera())
 Camera.debuggerEmoji = "📷"
 

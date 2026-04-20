@@ -4,7 +4,7 @@ local std = require("@libs/std")
 
 local ButtonDeactivator = std.Mechanic({})
 export type ButtonDeactivatorMechanic = std.Mechanic<typeof(ButtonDeactivator)>
-ButtonDeactivator.instanceTag = "ButtonDeactivator"
+ButtonDeactivator.basename = "ButtonDeactivator"
 ButtonDeactivator.instanceType = std.isA.Instance()
 ButtonDeactivator.debuggerEmoji = "💠"
 

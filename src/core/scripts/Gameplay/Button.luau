@@ -15,7 +15,7 @@ local GLOW_PADDING = Vector3.new(0.05, 0.05, 0.05)
 
 local Button = std.Mechanic({})
 export type ButtonMechanic = std.Mechanic<typeof(Button)>
-Button.instanceTag = "Button"
+Button.basename = "Button"
 Button.instanceType = std.isA.BasePart()
 Button.debuggerEmoji = "🖲️"
 

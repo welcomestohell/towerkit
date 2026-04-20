@@ -5,7 +5,7 @@ local std = require("@libs/std")
 local Dismounter = std.Mechanic({})
 export type DismounterMechanic = std.Mechanic<typeof(Dismounter)>
 
-Dismounter.instanceTag = "Dismounter"
+Dismounter.basename = "Dismounter"
 Dismounter.instanceType = std.isA.Instance()
 Dismounter.debuggerEmoji = "⏏️"
 

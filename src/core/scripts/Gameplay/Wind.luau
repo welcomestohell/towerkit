@@ -4,7 +4,7 @@ local threadpool = require("@libs/threadpool")
 
 local Wind = std.Mechanic({})
 export type WindMechanic = std.Mechanic<typeof(Wind)>
-Wind.instanceTag = "Wind"
+Wind.basename = "Wind"
 Wind.instanceType = std.isA.BasePart()
 Wind.debuggerEmoji = "💨"
 

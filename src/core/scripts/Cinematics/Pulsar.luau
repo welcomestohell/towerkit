@@ -2,7 +2,7 @@ local std = require("@libs/std")
 
 local Pulsar = std.Mechanic({})
 export type PulsarMechanic = std.Mechanic<typeof(Pulsar)>
-Pulsar.instanceTag = "Pulsar"
+Pulsar.basename = "Pulsar"
 Pulsar.instanceType = std.isA.Instance()
 Pulsar.debuggerEmoji = "🌈"
 

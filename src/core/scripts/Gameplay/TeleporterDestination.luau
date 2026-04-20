@@ -4,7 +4,7 @@ local std = require("@libs/std")
 local TeleporterDestination = std.Mechanic({})
 export type TeleporterDestinationMechanic = std.Mechanic<typeof(TeleporterDestination)>
 
-TeleporterDestination.instanceTag = "TeleporterDestination"
+TeleporterDestination.basename = "TeleporterDestination"
 TeleporterDestination.instanceType = std.isA.BasePart()
 TeleporterDestination.debuggerEmoji = "📍"
 

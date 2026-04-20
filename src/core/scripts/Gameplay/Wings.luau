@@ -3,7 +3,7 @@ local std = require("@libs/std")
 
 local Wings = std.Mechanic({})
 export type WingsMechanic = std.Mechanic<typeof(Wings)>
-Wings.instanceTag = "Wings"
+Wings.basename = "Wings"
 Wings.instanceType = std.isA.Instance()
 Wings.debuggerEmoji = "🪽"
 

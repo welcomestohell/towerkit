@@ -91,21 +91,21 @@ function ScriptCollector.collectModuleScript(self: ScriptCollector, instance: Mo
 
 	if MechanicImplementation.isMechanicImplementation(requiredOrError) then
 		local implementation = MechanicImplementation.downcast(requiredOrError)
-		implementation.instanceTag = implementation.instanceTag or instance.Name
+		implementation.basename = implementation.basename or instance.Name
 
-		if self.mechanicImplementationByTag[implementation.instanceTag] then
+		if self.mechanicImplementationByTag[implementation.basename] then
 			return log:error(
 				"Cannot collect mechanic implementation",
 				instance:GetFullName(),
 				"as it's instance tag",
-				implementation.instanceTag,
+				implementation.basename,
 				"is already registered; are you trying to `:override()` a mechanic?"
 			)
 		end
 
 		table.insert(self.mechanicImplementations, implementation)
-		self.mechanicImplementationByTag[implementation.instanceTag] = implementation
-		table.insert(self.mechanicTags, implementation.instanceTag)
+		self.mechanicImplementationByTag[implementation.basename] = implementation
+		table.insert(self.mechanicTags, implementation.basename)
 		table.sort(self.mechanicTags)
 	end
 end

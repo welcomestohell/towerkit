@@ -9,7 +9,7 @@ local tweens = require("@libs/tweens")
 local Teleporter = std.Mechanic({})
 export type TeleporterMechanic = std.Mechanic<typeof(Teleporter)>
 
-Teleporter.instanceTag = "Teleporter"
+Teleporter.basename = "Teleporter"
 Teleporter.instanceType = std.isA.BasePart()
 Teleporter.debuggerEmoji = "🌀"
 

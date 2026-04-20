@@ -23,7 +23,7 @@ export type Mechanic<Implementation = any, Mixin = {}> = Implementation & Mixin 
 }
 
 export type AnyMechanicImplementation = {
-	instanceTag: string,
+	basename: string,
 	instanceType: Instance,
 
 	debuggerEmoji: string,
@@ -72,7 +72,7 @@ function MechanicImplementation.new<Self>(self: Self): MechanicImplementation<Se
 	end
 
 	function proxy.__tostring(self: Mechanic<AnyMechanicImplementation>)
-		return `{self.implementation.instanceTag}({self.instance:GetFullName()})`
+		return `{self.implementation.basename}({self.instance:GetFullName()})`
 	end
 
 	implementation._proxy = proxy
@@ -104,8 +104,13 @@ function MechanicImplementation.attribute<T>(self: {}, name: string, type: T, de
 	return attribute
 end
 
+function MechanicImplementation.basename(self: {})
+	self = MechanicImplementation.downcast(self)
+	return `Mechanic: {self.basename}`
+end
+
 function MechanicImplementation.__tostring(self: AnyMechanicImplementation)
-	return self.instanceTag
+	return self.basename
 end
 
 return table.freeze(MechanicImplementation)

@@ -2,7 +2,7 @@ local std = require("@libs/std")
 
 local ScrollingTexture = std.Mechanic({})
 export type ScrollingTextureMechanic = std.Mechanic<typeof(ScrollingTexture)>
-ScrollingTexture.instanceTag = "ScrollingTexture"
+ScrollingTexture.basename = "ScrollingTexture"
 ScrollingTexture.instanceType = std.isA.Texture()
 ScrollingTexture.debuggerEmoji = "🏁"
 

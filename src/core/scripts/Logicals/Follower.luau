@@ -19,7 +19,7 @@ local mouse = Players.LocalPlayer:GetMouse()
 local Follower = std.Mechanic({})
 export type FollowerMechanic = std.Mechanic<typeof(Follower)>
 
-Follower.instanceTag = "Follower"
+Follower.basename = "Follower"
 Follower.instanceType = std.isA.BasePart()
 Follower.debuggerEmoji = "👀"
 

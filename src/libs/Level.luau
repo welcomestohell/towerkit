@@ -120,7 +120,7 @@ function Level.startMechanic(self: Level, mechanic: Mechanic.Mechanic<any>)
 
 	if implementation.onActivated then
 		log:warn(`\
-			{implementation.instanceTag} implemented \`onActivated\` which has no behavior, did you mean \
+			{implementation.basename} implemented \`onActivated\` which has no behavior, did you mean \
 			to implement \`onActivate\`?\
 		`)
 	end
@@ -184,7 +184,7 @@ function Level.start(self: Level)
 			table.insert(
 				initThreads,
 				Promise.try(implementation.onInit, implementation, self):catch(function(e)
-					log:warn(`Failed to initialize mechanic implementation "{implementation.instanceTag}":`, e)
+					log:warn(`Failed to initialize mechanic implementation "{implementation.basename}":`, e)
 				end)
 			)
 		end

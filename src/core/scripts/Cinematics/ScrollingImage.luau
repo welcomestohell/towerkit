@@ -2,7 +2,7 @@ local std = require("@libs/std")
 
 local ScrollingImage = std.Mechanic({})
 export type ScrollingImageMechanic = std.Mechanic<typeof(ScrollingImage)>
-ScrollingImage.instanceTag = "ScrollingImage"
+ScrollingImage.basename = "ScrollingImage"
 ScrollingImage.instanceType = std.isA.ImageLabel()
 ScrollingImage.debuggerEmoji = "🏁"
 

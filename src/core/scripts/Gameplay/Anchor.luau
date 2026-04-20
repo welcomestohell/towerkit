@@ -2,7 +2,7 @@ local std = require("@libs/std")
 
 local Anchor = std.Mechanic({})
 export type AnchorMechanic = std.Mechanic<typeof(Anchor)>
-Anchor.instanceTag = "Anchor"
+Anchor.basename = "Anchor"
 Anchor.instanceType = std.isA.BasePart()
 Anchor.debuggerEmoji = "🔱"
 

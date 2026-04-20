@@ -17,7 +17,7 @@ local std = require("@libs/std")
 local Culled = std.Mechanic({})
 export type CulledMechanic = std.Mechanic<typeof(Culled)>
 
-Culled.instanceTag = "Culled"
+Culled.basename = "Culled"
 Culled.instanceType = std.isA.BasePart()
 Culled.debuggerEmoji = "😶"
 

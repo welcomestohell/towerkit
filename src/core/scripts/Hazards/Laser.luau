@@ -3,7 +3,7 @@ local std = require("@libs/std")
 local Laser = std.Mechanic({})
 export type LaserMechanic = std.Mechanic<typeof(Laser)>
 
-Laser.instanceTag = "Laser"
+Laser.basename = "Laser"
 Laser.instanceType = std.gt.instanceTree({
 	Base = std.isA.BasePart(),
 	Beam = std.isA.BasePart(),

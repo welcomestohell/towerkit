@@ -3,7 +3,7 @@ local std = require("@libs/std")
 
 local OneWay = std.Mechanic({})
 export type OneWayMechanic = std.Mechanic<typeof(OneWay)>
-OneWay.instanceTag = "OneWay"
+OneWay.basename = "OneWay"
 OneWay.instanceType = std.isA.BasePart()
 OneWay.debuggerEmoji = "⛔"
 

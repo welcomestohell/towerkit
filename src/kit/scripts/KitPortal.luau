@@ -4,7 +4,7 @@ local std = require("@libs/std")
 
 local KitPortal = std.Mechanic({})
 export type KitPortalMechanic = std.Mechanic<typeof(KitPortal)>
-KitPortal.instanceTag = "KitPortal"
+KitPortal.basename = "KitPortal"
 KitPortal.instanceType = std.isA.Instance()
 KitPortal.debuggerEmoji = "💠"
 

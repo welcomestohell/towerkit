@@ -2,7 +2,7 @@ local std = require("@libs/std")
 
 local BoxSpawner = std.Mechanic({})
 export type BoxSpawnerMechanic = std.Mechanic<typeof(BoxSpawner), { template: PVInstance, boxLife: std.Life? }>
-BoxSpawner.instanceTag = "BoxSpawner"
+BoxSpawner.basename = "BoxSpawner"
 BoxSpawner.instanceType = std.gt.instanceTree({
 	Button = std.isA.BasePart(),
 	Box = std.isA.PVInstance(),

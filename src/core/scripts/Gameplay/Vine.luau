@@ -6,7 +6,7 @@ local std = require("@libs/std")
 
 local Vine = std.Mechanic({})
 export type VineMechanic = std.Mechanic<typeof(Vine)> & { templateHandle: BasePart? }
-Vine.instanceTag = "Vine"
+Vine.basename = "Vine"
 Vine.instanceType = std.gt.instanceTree({
 	Top = std.isA.BasePart(),
 	Activator = std.isA.BasePart(),

@@ -46,7 +46,7 @@ export type Mechanic<Self, Mixin = {}> = Self & Mixin & {
 export type MechanicImplementation = {
 	[unknown]: unknown,
 
-	instanceTag: string,
+	basename: string,
 	instanceType: gt.Type,
 
 	debuggerEmoji: string,
@@ -80,7 +80,7 @@ local function initializeProxy(implementation: {})
 	proxy.__newindex = implementation
 
 	function proxy.__tostring(self: Mechanic<MechanicImplementation>)
-		return `{self.implementation.instanceTag}({(self.instance :: any):GetFullName()})`
+		return `{self.implementation.basename}({(self.instance :: any):GetFullName()})`
 	end
 
 	Mechanic._proxies[implementation] = proxy
@@ -179,7 +179,7 @@ function Mechanic.prefixedAttributeMap<T>(self: {}, prefix: string, type: T): At
 end
 
 function Mechanic.__tostring(self: MechanicImplementation)
-	return self.instanceTag
+	return self.basename
 end
 
 return table.freeze(Mechanic)

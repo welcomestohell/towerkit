@@ -11,7 +11,7 @@ local DEFAULT_OFFSET = CFrame.new(0, DISTANCE_FROM_ROOT_TO_GROUND_STUDS / 2, 0)
 local Seat = std.Mechanic({})
 export type SeatMechanic = std.Mechanic<typeof(Seat)>
 
-Seat.instanceTag = "Seat"
+Seat.basename = "Seat"
 Seat.instanceType = std.isA.BasePart()
 Seat.debuggerEmoji = "🪑"
 

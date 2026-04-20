@@ -22,13 +22,13 @@ function ScriptCollector.tryMechanicImplementation(
 	implementation: Mechanic.MechanicImplementation
 )
 	if Mechanic.isMechanicImplementation(implementation) then
-		local tagged = self.mechanicImplementationByTag[implementation.instanceTag]
+		local tagged = self.mechanicImplementationByTag[implementation.basename]
 		if tagged then
 			error("Duplicate mechanic found")
 		end
-		self.mechanicImplementationByTag[implementation.instanceTag] = implementation
+		self.mechanicImplementationByTag[implementation.basename] = implementation
 		table.insert(self.mechanicImplementations, implementation)
-		table.insert(self.mechanicTags, implementation.instanceTag)
+		table.insert(self.mechanicTags, implementation.basename)
 		table.sort(self.mechanicTags)
 	end
 end

@@ -19,7 +19,6 @@ return {
 
 		".lute/ci.luau",
 		".lute/mirror.luau",
-		".lute/watch.luau",
 
 		"patches",
 		".zed",

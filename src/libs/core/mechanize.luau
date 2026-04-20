@@ -22,25 +22,29 @@ local gt = require("@libs/gt")
 local function mechanize<Self>(
 	implementation: Self,
 	outerLife: Life.Life,
-	instance: Instance
+	instanceConfiguration: Instance
 ): Result.Result<MechanicImplementation.Mechanic<Self>, string>
 	local implementation = MechanicImplementation.downcast(implementation)
 
-	local instanceConfiguration = instance
-	if instance.ClassName == "Configuration" and instance.Parent then
-		instanceConfiguration, instance = instance, instance.Parent
+	if not instanceConfiguration:IsA("Configuration") then
+		return Result.Err(`Mechanics must be tagged onto Configuration instances`)
+	end
+
+	local instance = instanceConfiguration.Parent
+	if not instance then
+		return Result.Err(`Configuration missing it's parent instance`)
 	end
 
 	if implementation.instanceType then
 		local instanceType = gt.build(implementation.instanceType)
-		local isValid, reason = instanceType:matches(instance)
+		local isValid, reason = instanceType:matches(instanceConfiguration)
 		if not isValid then
 			return Result.Err(`Invalid instance type: {reason:formatErr()}`)
 		end
 	end
 
 	local mechanicLife = outerLife:extend()
-	mechanicLife:add(instance)
+	mechanicLife:add(instanceConfiguration)
 	mechanicLife:destroyOn(instance.Destroying)
 
 	local mechanic: any = setmetatable({

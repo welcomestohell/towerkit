@@ -2,7 +2,7 @@ local std = require("@libs/std")
 
 local Conveyor = std.Mechanic({})
 export type ConveyorMechanic = std.Mechanic<typeof(Conveyor)>
-Conveyor.instanceTag = "Conveyor"
+Conveyor.basename = "Conveyor"
 Conveyor.instanceType = std.isA.BasePart()
 Conveyor.debuggerEmoji = "🛣️"
 

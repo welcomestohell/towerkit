@@ -18,7 +18,7 @@ local sounds = require("@libs/sounds")
 local Turret = std.Mechanic({})
 export type TurretMechanic = std.Mechanic<typeof(Turret)>
 
-Turret.instanceTag = "Turret"
+Turret.basename = "Turret"
 Turret.instanceType = std.gt.instanceTree(std.isA.Model(), {
 	Base = std.isA.BasePart(),
 	Bullet = std.gt.instanceTree(std.isA.BasePart(), {

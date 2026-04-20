@@ -3,7 +3,7 @@ local threadpool = require("@libs/threadpool")
 
 local Shover = std.Mechanic({})
 export type ShoverMechanic = std.Mechanic<typeof(Shover)>
-Shover.instanceTag = "Shover"
+Shover.basename = "Shover"
 Shover.instanceType = std.gt.instanceTree({
 	ShoverConstraint = std.isA.PrismaticConstraint(),
 })

@@ -30,7 +30,7 @@ local CLASSES_TO_TWEEN: { [string]: string } = {
 local ButtonEnabled = std.Mechanic({})
 export type ButtonEnabledMechanic = std.Mechanic<typeof(ButtonEnabled)>
 
-ButtonEnabled.instanceTag = "ButtonEnabled"
+ButtonEnabled.basename = "ButtonEnabled"
 ButtonEnabled.instanceType = std.isA.Instance()
 ButtonEnabled.debuggerEmoji = "💡"
 
