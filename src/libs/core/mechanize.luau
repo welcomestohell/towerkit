@@ -8,6 +8,7 @@ local Result = require("@libs/Result")
 local gt = require("@libs/gt")
 
 --[=[
+	@within N/A
 	@function mechanize
 	@tag Library
 	@since 0.1.0
@@ -27,7 +28,10 @@ local function mechanize<Self>(
 	local implementation = MechanicImplementation.downcast(implementation)
 
 	if not instanceConfiguration:IsA("Configuration") then
-		return Result.Err(`Mechanics must be tagged onto Configuration instances`)
+		return Result.Err(
+			`Mechanics must be tagged onto Configuration instances;`
+				.. 'did you apply the "Mechanic: ..." tag onto the parent instance?'
+		)
 	end
 
 	local instance = instanceConfiguration.Parent

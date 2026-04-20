@@ -4,12 +4,12 @@
 # New tools can be added by running `rokit add <tool>` in a terminal.
 
 [tools]
-lute = "luau-lang/lute@0.1.0-nightly.20260106"
-luau-lsp = "JohnnyMorganz/luau-lsp@1.61.0"
-selene = "Kampfkarren/selene@0.30.0"
-StyLua = "JohnnyMorganz/StyLua@2.3.1"
+lute = "luau-lang/lute@1.0.0"
+luau-lsp = "JohnnyMorganz/luau-lsp@1.66.0"
+selene = "Kampfkarren/selene@0.30.1"
+StyLua = "JohnnyMorganz/StyLua@2.4.1"
 asphalt = "jacktabscode/asphalt@1.2.0"
-blink = "1axen/blink@0.18.6"
+blink = "1axen/blink@0.18.8"
 darklua = "seaofvoices/darklua@0.18.0"
 pesde = "pesde-pkg/pesde@0.7.3+registry.0.2.3"
 rojo = "rojo-rbx/rojo@7.7.0-rc.1"

@@ -47,7 +47,7 @@ export type ScriptCollector = setmetatable<{
 
     Constructs an empty ScriptCollector.
 ]=]
-function ScriptCollector.new()
+function ScriptCollector.new(): ScriptCollector
 	return setmetatable({
 		mechanicImplementations = {},
 		mechanicImplementationByTag = {},
