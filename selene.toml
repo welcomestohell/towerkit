@@ -1,9 +1,0 @@
-std = "roblox"
-exclude = ["**/generated/**", "src/core/shared/prvdmwrong/**"]
-
-[lints]
-incorrect_standard_library_use = "allow"
-mixed_table = "allow"
-shadowing = "allow"
-undefined_variable = "allow"
-unused_variable = "allow"

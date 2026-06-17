@@ -1,0 +1,25 @@
+option Casing = Camel
+option TypesOutput = "./shared/generated/net.luau"
+option ServerOutput = "./server/generated/net.luau"
+option ClientOutput = "./client/generated/net.luau"
+option PromiseLibrary = "ReplicatedStorage.Packages.Promise"
+option RemoteScope = "WTH_CORE"
+
+event damage {
+    From: Client,
+    Type: Reliable,
+    Call: SingleAsync,
+    Data: u8
+}
+
+event patch {
+    from: Server,
+    type: Reliable,
+    call: SingleSync,
+    data: unknown,
+}
+
+function fetchAssetIds {
+    yield: Promise,
+    return: string[]?,
+}

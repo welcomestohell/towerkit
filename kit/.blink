@@ -1,0 +1,31 @@
+option Casing = Camel
+option TypesOutput = "./shared/generated/net.luau"
+option ServerOutput = "./server/generated/net.luau"
+option ClientOutput = "./client/generated/net.luau"
+option PromiseLibrary = "ReplicatedStorage.Packages.Promise"
+option RemoteScope = "WTH_KIT"
+
+event rejoin {
+    From: Client,
+    Type: Reliable,
+    Call: ManyAsync,
+    Data: ()
+}
+
+function getTower {
+    Yield: Promise,
+    Data: (),
+    Return: Instance
+}
+
+function loadMechanics {
+    Yield: Promise,
+    Data: (),
+    Return: Instance
+}
+
+function loadDecorations {
+    Yield: Promise,
+    Data: (),
+    Return: Instance
+}
